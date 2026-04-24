@@ -57,5 +57,9 @@
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
     "zod": "^4.3.6"
+  },
+  "bin": {
+    "squoosh-mcp": "./squoosh-mcp.mjs",
+    "squoosh-cli": "./cli/src/prod.js"
   }
 }
