@@ -1,0 +1,15 @@
+{
+  "extends": "./generic-tsconfig.json",
+  "compilerOptions": {
+    "lib": ["webworker", "esnext"],
+    "types": []
+  },
+  "include": [
+    "src/features/**/worker/**/*",
+    "src/features/**/shared/**/*",
+    "src/features/worker-utils/**/*",
+    "src/features-worker/**/*",
+    "src/worker-shared/**/*",
+    "src/sw/**/*"
+  ]
+}
