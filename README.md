@@ -6,10 +6,10 @@ This repository contains a fully working fork of the popular Squoosh image optim
 
 ## 📦 Global Installation (Easiest Method)
 
-You don't need to clone this repository to use the tools. You can install both the CLI and MCP Server globally on your machine directly from GitHub with a single command:
+You can install both the CLI and MCP Server globally on your machine directly from GitHub with a single command. **This method bypasses NPM Git bugs by downloading the tarball:**
 
 ```bash
-npm install -g github:PIMPfiction/squoosh-cli-mcp-2026
+npm install -g https://github.com/PIMPfiction/squoosh-cli-mcp-2026/archive/refs/heads/master.tar.gz
 ```
 
 This will automatically add `squoosh-cli` and `squoosh-mcp` as global commands on your system.
@@ -18,11 +18,11 @@ This will automatically add `squoosh-cli` and `squoosh-mcp` as global commands o
 
 ## 🤖 1. Squoosh MCP Server
 
-The built-in MCP server allows AI assistants (like Claude, Cursor) to automatically compress and optimize images during your workflow. When asked to "optimize my images", the AI connects to this server and executes Squoosh natively.
+The built-in MCP server allows AI assistants (like Claude) to automatically compress and optimize images during your workflow. When asked to "optimize my images", the AI connects to this server and executes Squoosh natively.
 
 ### Installing for Claude Code (CLI)
 
-Once you have globally installed the package, just run this command to connect it to Claude Code:
+Once you have globally installed the package via the command above, just run this to connect it to Claude Code:
 
 ```bash
 claude mcp add squoosh-mcp squoosh-mcp
@@ -88,7 +88,7 @@ _(Note: WebAssembly warnings may temporarily appear in the terminal during fallb
 
 If you want to view, edit, or commit to the source code:
 
-1. Clone the repository:
+1. Clone the repository and install dependencies:
 
    ```bash
    git clone https://github.com/PIMPfiction/squoosh-cli-mcp-2026.git
